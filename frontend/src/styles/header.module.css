@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 1rem 2rem;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 2rem;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.link {
+    color: #b3ffec;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.language button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mobileToggle {
+display: none;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .mobileToggle {
+        display: block;
+    }
+}  
